@@ -1,0 +1,3 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#parse], [(], ["fragment.vm"], [)], [], [], []] -> #parse
+└── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#parse], [(], ["fragment.vm"], [)]], directiveName=parse] -> #parse
+    └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=["fragment.vm"]] -> "fragment.vm"

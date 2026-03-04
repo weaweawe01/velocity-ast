@@ -1,0 +1,3 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#stop], [\n], [X], [], [], []] -> #stop
+├── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#stop], [\n]], directiveName=stop] -> #stop
+└── ASTText [id=2, info=0, invalid=false, tokens=[X]] -> X

@@ -1,0 +1,13 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#if], [(], [$a], [ ], [eq], [ ], [$b], [ ], [and]...] -> #if
+└── ASTIfStatement [id=23, info=0, invalid=false, tokens=[#if], [(], [$a], [ ], [eq], [ ], [$b], [ ], [and]...] -> #if
+    ├── ASTExpression [id=27, info=0, invalid=false, tokens=[$a], [ ], [eq], [ ], [$b], [ ], [and], [ ], [$c],...] -> $a
+    │   └── ASTOrNode [id=29, info=0, invalid=false, tokens=[ ], [not], [ ], [$d]] ->  
+    │       ├── ASTAndNode [id=30, info=0, invalid=false, tokens=[ ], [$c], [ ]] ->  
+    │       │   ├── ASTEQNode [id=31, info=0, invalid=false, tokens=[ ], [$b], [ ]] ->  
+    │       │   │   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+    │       │   │   └── ASTReference [id=20, info=0, invalid=false, tokens=[$b]] -> $b
+    │       │   └── ASTReference [id=20, info=0, invalid=false, tokens=[$c]] -> $c
+    │       └── ASTNotNode [id=42, info=0, invalid=false, tokens=[ ], [$d]] ->  
+    │           └── ASTReference [id=20, info=0, invalid=false, tokens=[$d]] -> $d
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[ok]] -> ok
+        └── ASTText [id=2, info=0, invalid=false, tokens=[ok]] -> ok

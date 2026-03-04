@@ -1,0 +1,3 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#evaluate], [(], [$script], [)], [], [], []] -> #evaluate
+└── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#evaluate], [(], [$script], [)]], directiveName=evaluate] -> #evaluate
+    └── ASTReference [id=20, info=0, invalid=false, tokens=[$script]] -> $script

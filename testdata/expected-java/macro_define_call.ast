@@ -1,0 +1,8 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#macro], [(], [foo], [ ], [$a], [)], [$a], [#end]...] -> #macro
+├── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#macro], [(], [foo], [ ], [$a], [)], [$a], [#end]], directiveName=macro] -> #macro
+│   ├── ASTWord [id=11, info=0, invalid=false, tokens=[foo]] -> foo
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+│   └── ASTBlock [id=14, info=0, invalid=false, tokens=[$a]] -> $a
+│       └── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+└── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#foo], [(], [1], [)]], directiveName=foo] -> #foo
+    └── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[1]] -> 1

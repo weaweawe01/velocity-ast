@@ -1,0 +1,78 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#set(], [$x], [=], [''], [)], [ ], [#set(], [$rt]...] -> #set(
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$x], [=], [''], [)]] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=['']] -> ''
+│       └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=['']] -> ''
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$rt], [=], [$x], [.], [class], [.], [for...] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$rt]] -> $rt
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[$x], [.], [class], [.], [forName], [(], ['java.la...] -> $x
+│       └── ASTReference [id=20, info=0, invalid=false, tokens=[$x], [.], [class], [.], [forName], [(], ['java.la...] -> $x
+│           ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[class]] -> class
+│           └── ASTMethod [id=18, info=0, invalid=false, tokens=[forName], [(], ['java.lang.Runtime'], [)]] -> forName
+│               ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[forName]] -> forName
+│               └── ASTExpression [id=27, info=0, invalid=false, tokens=['java.lang.Runtime']] -> 'java.lang.Runtime'
+│                   └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=['java.lang.Runtime']] -> 'java.lang.Runtime'
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$chr], [=], [$x], [.], [class], [.], [fo...] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$chr]] -> $chr
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[$x], [.], [class], [.], [forName], [(], ['java.la...] -> $x
+│       └── ASTReference [id=20, info=0, invalid=false, tokens=[$x], [.], [class], [.], [forName], [(], ['java.la...] -> $x
+│           ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[class]] -> class
+│           └── ASTMethod [id=18, info=0, invalid=false, tokens=[forName], [(], ['java.lang.Character'], [)]] -> forName
+│               ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[forName]] -> forName
+│               └── ASTExpression [id=27, info=0, invalid=false, tokens=['java.lang.Character']] -> 'java.lang.Character'
+│                   └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=['java.lang.Character']] -> 'java.lang.Character'
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$str], [=], [$x], [.], [class], [.], [fo...] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$str]] -> $str
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[$x], [.], [class], [.], [forName], [(], ['java.la...] -> $x
+│       └── ASTReference [id=20, info=0, invalid=false, tokens=[$x], [.], [class], [.], [forName], [(], ['java.la...] -> $x
+│           ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[class]] -> class
+│           └── ASTMethod [id=18, info=0, invalid=false, tokens=[forName], [(], ['java.lang.String'], [)]] -> forName
+│               ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[forName]] -> forName
+│               └── ASTExpression [id=27, info=0, invalid=false, tokens=['java.lang.String']] -> 'java.lang.String'
+│                   └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=['java.lang.String']] -> 'java.lang.String'
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$ex], [=], [$rt], [.], [getRuntime], [(]...] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$ex]] -> $ex
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[$rt], [.], [getRuntime], [(], [)], [.], [exec], [...] -> $rt
+│       └── ASTReference [id=20, info=0, invalid=false, tokens=[$rt], [.], [getRuntime], [(], [)], [.], [exec], [...] -> $rt
+│           ├── ASTMethod [id=18, info=0, invalid=false, tokens=[getRuntime], [(], [)]] -> getRuntime
+│           │   └── ASTIdentifier [id=10, info=0, invalid=false, tokens=[getRuntime]] -> getRuntime
+│           └── ASTMethod [id=18, info=0, invalid=false, tokens=[exec], [(], ['whoami'], [)]] -> exec
+│               ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[exec]] -> exec
+│               └── ASTExpression [id=27, info=0, invalid=false, tokens=['whoami']] -> 'whoami'
+│                   └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=['whoami']] -> 'whoami'
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+├── ASTReference [id=20, info=0, invalid=false, tokens=[$ex], [.], [waitFor], [(], [)]] -> $ex
+│   └── ASTMethod [id=18, info=0, invalid=false, tokens=[waitFor], [(], [)]] -> waitFor
+│       └── ASTIdentifier [id=10, info=0, invalid=false, tokens=[waitFor]] -> waitFor
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->   
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$out], [=], [$ex], [.], [getInputStream]...] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$out]] -> $out
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[$ex], [.], [getInputStream], [(], [)]] -> $ex
+│       └── ASTReference [id=20, info=0, invalid=false, tokens=[$ex], [.], [getInputStream], [(], [)]] -> $ex
+│           └── ASTMethod [id=18, info=0, invalid=false, tokens=[getInputStream], [(], [)]] -> getInputStream
+│               └── ASTIdentifier [id=10, info=0, invalid=false, tokens=[getInputStream]] -> getInputStream
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+└── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#foreach], [(], [$i], [ ], [in], [ ], [[], [1], [...], directiveName=foreach] -> #foreach
+    ├── ASTReference [id=20, info=0, invalid=false, tokens=[$i]] -> $i
+    ├── ASTWord [id=11, info=0, invalid=false, tokens=[in]] -> in
+    ├── ASTIntegerRange [id=17, info=0, invalid=false, tokens=[[], [1], [..], [$out], [.], [available], [(], [)]...] -> [
+    │   ├── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[1]] -> 1
+    │   └── ASTReference [id=20, info=0, invalid=false, tokens=[$out], [.], [available], [(], [)]] -> $out
+    │       └── ASTMethod [id=18, info=0, invalid=false, tokens=[available], [(], [)]] -> available
+    │           └── ASTIdentifier [id=10, info=0, invalid=false, tokens=[available]] -> available
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[$str], [.], [valueOf], [(], [$chr], [.], [toChars...] -> $str
+        └── ASTReference [id=20, info=0, invalid=false, tokens=[$str], [.], [valueOf], [(], [$chr], [.], [toChars...] -> $str
+            └── ASTMethod [id=18, info=0, invalid=false, tokens=[valueOf], [(], [$chr], [.], [toChars], [(], [$out...] -> valueOf
+                ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[valueOf]] -> valueOf
+                └── ASTExpression [id=27, info=0, invalid=false, tokens=[$chr], [.], [toChars], [(], [$out], [.], [read], ...] -> $chr
+                    └── ASTReference [id=20, info=0, invalid=false, tokens=[$chr], [.], [toChars], [(], [$out], [.], [read], ...] -> $chr
+                        └── ASTMethod [id=18, info=0, invalid=false, tokens=[toChars], [(], [$out], [.], [read], [(], [)], [)]] -> toChars
+                            ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[toChars]] -> toChars
+                            └── ASTExpression [id=27, info=0, invalid=false, tokens=[$out], [.], [read], [(], [)]] -> $out
+                                └── ASTReference [id=20, info=0, invalid=false, tokens=[$out], [.], [read], [(], [)]] -> $out
+                                    └── ASTMethod [id=18, info=0, invalid=false, tokens=[read], [(], [)]] -> read
+                                        └── ASTIdentifier [id=10, info=0, invalid=false, tokens=[read]] -> read

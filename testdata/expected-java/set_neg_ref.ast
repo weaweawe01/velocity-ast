@@ -1,0 +1,8 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#set(], [$x], [=], [-], [$a], [)], [;], [$x], []...] -> #set(
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$x], [=], [-], [$a], [)]] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[-], [$a]] -> -
+│       └── ASTNegateNode [id=43, info=0, invalid=false, tokens=[$a]] -> $a
+│           └── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+├── ASTText [id=2, info=0, invalid=false, tokens=[;]] -> ;
+└── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x

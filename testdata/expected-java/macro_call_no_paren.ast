@@ -1,0 +1,4 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#foo], [ ], [$a], [], [], []] -> #foo
+├── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#foo]], directiveName=foo] -> #foo
+├── ASTText [id=2, info=0, invalid=false, tokens=[ ]] ->  
+└── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a

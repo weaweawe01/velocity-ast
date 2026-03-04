@@ -1,0 +1,7 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#if], [(], [!], [$a], [)], [ok], [#end], [], []...] -> #if
+└── ASTIfStatement [id=23, info=0, invalid=false, tokens=[#if], [(], [!], [$a], [)], [ok], [#end]] -> #if
+    ├── ASTExpression [id=27, info=0, invalid=false, tokens=[!], [$a]] -> !
+    │   └── ASTNotNode [id=42, info=0, invalid=false, tokens=[$a]] -> $a
+    │       └── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[ok]] -> ok
+        └── ASTText [id=2, info=0, invalid=false, tokens=[ok]] -> ok

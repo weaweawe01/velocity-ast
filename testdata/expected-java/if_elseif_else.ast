@@ -1,0 +1,14 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#if], [(], [$a], [)], [$a], [#elseif], [(], [$b],...] -> #if
+└── ASTIfStatement [id=23, info=0, invalid=false, tokens=[#if], [(], [$a], [)], [$a], [#elseif], [(], [$b],...] -> #if
+    ├── ASTExpression [id=27, info=0, invalid=false, tokens=[$a]] -> $a
+    │   └── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+    ├── ASTBlock [id=14, info=0, invalid=false, tokens=[$a]] -> $a
+    │   └── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+    ├── ASTElseIfStatement [id=25, info=0, invalid=false, tokens=[#elseif], [(], [$b], [)], [$b]] -> #elseif
+    │   ├── ASTExpression [id=27, info=0, invalid=false, tokens=[$b]] -> $b
+    │   │   └── ASTReference [id=20, info=0, invalid=false, tokens=[$b]] -> $b
+    │   └── ASTBlock [id=14, info=0, invalid=false, tokens=[$b]] -> $b
+    │       └── ASTReference [id=20, info=0, invalid=false, tokens=[$b]] -> $b
+    └── ASTElseStatement [id=24, info=0, invalid=false, tokens=[#else], [$c]] -> #else
+        └── ASTBlock [id=14, info=0, invalid=false, tokens=[$c]] -> $c
+            └── ASTReference [id=20, info=0, invalid=false, tokens=[$c]] -> $c

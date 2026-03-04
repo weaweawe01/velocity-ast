@@ -1,0 +1,12 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#set(], [$x], [=], [(], [1], [+], [2], [)], [*], ...] -> #set(
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$x], [=], [(], [1], [+], [2], [)], [*], ...] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[(], [1], [+], [2], [)], [*], [3]] -> (
+│       └── ASTMulNode [id=39, info=0, invalid=false, tokens=[3]] -> 3
+│           ├── ASTExpression [id=27, info=0, invalid=false, tokens=[1], [+], [2]] -> 1
+│           │   └── ASTAddNode [id=37, info=0, invalid=false, tokens=[2]] -> 2
+│           │       ├── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[1]] -> 1
+│           │       └── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[2]] -> 2
+│           └── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[3]] -> 3
+├── ASTText [id=2, info=0, invalid=false, tokens=[;]] -> ;
+└── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x

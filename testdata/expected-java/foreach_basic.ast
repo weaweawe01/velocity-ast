@@ -1,0 +1,7 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#foreach], [(], [$i], [ ], [in], [ ], [$list], [)...] -> #foreach
+└── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#foreach], [(], [$i], [ ], [in], [ ], [$list], [)...], directiveName=foreach] -> #foreach
+    ├── ASTReference [id=20, info=0, invalid=false, tokens=[$i]] -> $i
+    ├── ASTWord [id=11, info=0, invalid=false, tokens=[in]] -> in
+    ├── ASTReference [id=20, info=0, invalid=false, tokens=[$list]] -> $list
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[$i]] -> $i
+        └── ASTReference [id=20, info=0, invalid=false, tokens=[$i]] -> $i

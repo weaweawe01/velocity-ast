@@ -1,0 +1,7 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#set(], [$x], [=], [1.25], [)], [;], [$x], [], [...] -> #set(
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$x], [=], [1.25], [)]] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[1.25]] -> 1.25
+│       └── ASTFloatingPointLiteral [id=7, info=0, invalid=false, tokens=[1.25]] -> 1.25
+├── ASTText [id=2, info=0, invalid=false, tokens=[;]] -> ;
+└── ASTReference [id=20, info=0, invalid=false, tokens=[$x]] -> $x

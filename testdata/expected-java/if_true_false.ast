@@ -1,0 +1,8 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#if], [(], [true], [&&], [false], [)], [ok], [#en...] -> #if
+└── ASTIfStatement [id=23, info=0, invalid=false, tokens=[#if], [(], [true], [&&], [false], [)], [ok], [#en...] -> #if
+    ├── ASTExpression [id=27, info=0, invalid=false, tokens=[true], [&&], [false]] -> true
+    │   └── ASTAndNode [id=30, info=0, invalid=false, tokens=[false]] -> false
+    │       ├── ASTTrue [id=21, info=0, invalid=false, tokens=[true]] -> true
+    │       └── ASTFalse [id=22, info=0, invalid=false, tokens=[false]] -> false
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[ok]] -> ok
+        └── ASTText [id=2, info=0, invalid=false, tokens=[ok]] -> ok

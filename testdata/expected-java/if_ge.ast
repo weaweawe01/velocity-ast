@@ -1,0 +1,8 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#if], [(], [$a], [>=], [$b], [)], [$a], [#end], [...] -> #if
+└── ASTIfStatement [id=23, info=0, invalid=false, tokens=[#if], [(], [$a], [>=], [$b], [)], [$a], [#end]] -> #if
+    ├── ASTExpression [id=27, info=0, invalid=false, tokens=[$a], [>=], [$b]] -> $a
+    │   └── ASTGENode [id=36, info=0, invalid=false, tokens=[$b]] -> $b
+    │       ├── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a
+    │       └── ASTReference [id=20, info=0, invalid=false, tokens=[$b]] -> $b
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[$a]] -> $a
+        └── ASTReference [id=20, info=0, invalid=false, tokens=[$a]] -> $a

@@ -1,0 +1,6 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[$!foo], [$!{], [foo], [}], [$!{], [foo], [|], [1]...] -> $!foo
+├── ASTReference [id=20, info=0, invalid=false, tokens=[$!foo]] -> $!foo
+├── ASTReference [id=20, info=0, invalid=false, tokens=[$!{], [foo], [}]] -> $!{
+└── ASTReference [id=20, info=0, invalid=false, tokens=[$!{], [foo], [|], [1], [}]] -> $!{
+    └── ASTExpression [id=27, info=0, invalid=false, tokens=[1]] -> 1
+        └── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[1]] -> 1

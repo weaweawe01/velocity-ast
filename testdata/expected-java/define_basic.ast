@@ -1,0 +1,6 @@
+ASTprocess [id=0, info=0, invalid=false, tokens=[#define], [(], [$block], [)], [abc], [$name], [#e...] -> #define
+└── ASTDirective [ASTDirective [id=13, info=0, invalid=false, tokens=[#define], [(], [$block], [)], [abc], [$name], [#e...], directiveName=define] -> #define
+    ├── ASTReference [id=20, info=0, invalid=false, tokens=[$block]] -> $block
+    └── ASTBlock [id=14, info=0, invalid=false, tokens=[abc], [$name]] -> abc
+        ├── ASTText [id=2, info=0, invalid=false, tokens=[abc]] -> abc
+        └── ASTReference [id=20, info=0, invalid=false, tokens=[$name]] -> $name
