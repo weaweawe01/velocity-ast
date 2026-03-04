@@ -50,6 +50,41 @@ func main() {
 
 ```
 
+## 执行效果
+```shell
+root@hcss-ecs-5ed3:~/goggg# go run . 
+ASTprocess [id=0, info=0, invalid=false, tokens=[#set(], [$e], [=], [666], [)], [;], [$e], [.], [g...] -> #set(
+├── ASTSetDirective [id=26, info=0, invalid=false, tokens=[#set(], [$e], [=], [666], [)]] -> #set(
+│   ├── ASTReference [id=20, info=0, invalid=false, tokens=[$e]] -> $e
+│   └── ASTExpression [id=27, info=0, invalid=false, tokens=[666]] -> 666
+│       └── ASTIntegerLiteral [id=8, info=0, invalid=false, tokens=[666]] -> 666
+├── ASTText [id=2, info=0, invalid=false, tokens=[;]] -> ;
+└── ASTReference [id=20, info=0, invalid=false, tokens=[$e], [.], [getClass], [(], [)], [.], [forName], [...] -> $e
+    ├── ASTMethod [id=18, info=0, invalid=false, tokens=[getClass], [(], [)]] -> getClass
+    │   └── ASTIdentifier [id=10, info=0, invalid=false, tokens=[getClass]] -> getClass
+    ├── ASTMethod [id=18, info=0, invalid=false, tokens=[forName], [(], ["java.lang.Runtime"], [)]] -> forName
+    │   ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[forName]] -> forName
+    │   └── ASTExpression [id=27, info=0, invalid=false, tokens=["java.lang.Runtime"]] -> "java.lang.Runtime"
+    │       └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=["java.lang.Runtime"]] -> "java.lang.Runtime"
+    ├── ASTMethod [id=18, info=0, invalid=false, tokens=[getMethod], [(], ["getRuntime"], [,], [null], [)]] -> getMethod
+    │   ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[getMethod]] -> getMethod
+    │   ├── ASTExpression [id=27, info=0, invalid=false, tokens=["getRuntime"]] -> "getRuntime"
+    │   │   └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=["getRuntime"]] -> "getRuntime"
+    │   └── ASTExpression [id=27, info=0, invalid=false, tokens=[null]] -> null
+    │       └── ASTReference [id=20, info=0, invalid=false, tokens=[null]] -> null
+    ├── ASTMethod [id=18, info=0, invalid=false, tokens=[invoke], [(], [null], [,], [null], [)]] -> invoke
+    │   ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[invoke]] -> invoke
+    │   ├── ASTExpression [id=27, info=0, invalid=false, tokens=[null]] -> null
+    │   │   └── ASTReference [id=20, info=0, invalid=false, tokens=[null]] -> null
+    │   └── ASTExpression [id=27, info=0, invalid=false, tokens=[null]] -> null
+    │       └── ASTReference [id=20, info=0, invalid=false, tokens=[null]] -> null
+    └── ASTMethod [id=18, info=0, invalid=false, tokens=[exec], [(], ["calc"], [)]] -> exec
+        ├── ASTIdentifier [id=10, info=0, invalid=false, tokens=[exec]] -> exec
+        └── ASTExpression [id=27, info=0, invalid=false, tokens=["calc"]] -> "calc"
+            └── ASTStringLiteral [id=9, info=0, invalid=false, tokens=["calc"]] -> "calc"
+
+```
+
 
 
 ## 项目结构
